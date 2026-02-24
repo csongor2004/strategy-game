@@ -2,18 +2,28 @@
 <html lang="hu">
 <head>
     <meta charset="UTF-8">
-    <title>Stratégiai Játék</title>
+    <title>Sziget-Hódító Projekt</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
-    <div id="ui-layer">
-        <p>Játékos: <span id="current-player">1</span></p>
-        <p>Arany: <span id="gold-count">100</span></p>
-        <button id="end-turn">Kör vége</button>
-    </div>
 
-    <div id="game-board"></div>
+    <div id="game-container">
+        <div id="ui-panel">
+            <h1>Sziget-Hódító</h1>
+            <div class="stats">
+                Játékos: <span id="current-player">1</span> | 
+                Arany: <span id="gold">100</span>
+            </div>
+            <button id="btn-next-turn">Kör vége</button>
+        </div>
+
+        <div id="game-board"></div>
+
+        <div id="footer">
+            Készítette: Török Csongor -ISQLU8
+        </div>
+    </div>
 
     <script src="game.js"></script>
 </body>
