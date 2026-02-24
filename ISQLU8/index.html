@@ -7,24 +7,30 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
-
     <div id="game-container">
         <div id="ui-panel">
             <h1>Sziget-Hódító</h1>
-            <div class="stats">
-                Játékos: <span id="current-player">1</span> | 
-                Arany: <span id="gold">100</span>
+            <div class="stats-container">
+                <div class="player-stat p1-stat active-ui">
+                    Piros (P1) Arany: <span id="gold-1">100</span>
+                </div>
+                <div class="player-stat p2-stat">
+                    Kék (P2) Arany: <span id="gold-2">100</span>
+                </div>
+            </div>
+            <div class="actions">
+                <strong>Aktuális akció:</strong><br>
+                <label><input type="radio" name="action" value="buy_worker" checked> Munkás lerakása (20 Arany)</label><br>
+                <label><input type="radio" name="action" value="buy_soldier"> Katona lerakása (30 Arany)</label><br>
+                <label><input type="radio" name="action" value="move"> Kijelölés / Mozgás / Támadás</label>
             </div>
             <button id="btn-next-turn">Kör vége</button>
         </div>
-
         <div id="game-board"></div>
-
         <div id="footer">
-            Készítette: Török Csongor -ISQLU8
+            Készítette: Török Csongor - ISQLU8
         </div>
     </div>
-
     <script src="game.js"></script>
 </body>
 </html>
