@@ -1,0 +1,2 @@
+# strategy-game
+Stratégiai játék
